@@ -7,12 +7,14 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
     text-align: center;
-    background-color: #f4f4f4; /* Optional: Add a background color */
+    position: relative; /* Positioning context for absolute logo */
 }
 
 img#logo {
-    position: absolute; /* Ensure the logo does not interfere with content centering */
+    position: absolute; /* Absolute positioning for logo */
     top: 10px; /* Adjust as needed */
     left: 10px; /* Adjust as needed */
     width: auto; /* Maintain aspect ratio */
@@ -22,8 +24,8 @@ img#logo {
 #content {
     display: inline-block;
     padding: 20px;
-    border: 1px solid #ddd; /* Optional: Add a border for visibility */
-    background: #fff; /* Optional: Add a background color */
+    border: 1px solid #333; /* Dark border for contrast */
+    background: #222; /* Slightly lighter black background */
 }
 
 /* Responsive styling */
@@ -43,14 +45,6 @@ img#logo {
     a {
         color: #6CF;
     }
-
-    #l {
-        color: #F33;
-    }
-
-    #g {
-        filter: invert(1);
-    }
 }
 
 /* General element styling */
@@ -61,4 +55,3 @@ img, #b {
 span {
     display: inline-block;
 }
-
