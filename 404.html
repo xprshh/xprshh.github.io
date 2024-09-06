@@ -1,14 +1,11 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>TUX - 404</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KISS - 404</title>
     <style>
         body {
-            overflow-y: scroll;
-            font: 16px monospace, monospace;
             margin: 0;
+            font-family: monospace, monospace;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -17,6 +14,7 @@
             background-color: #fff;
             color: #000;
             text-align: center;
+            position: relative;
         }
         pre {
             margin: 0;
@@ -44,16 +42,18 @@
             a {
                 color: #6CF;
             }
-            #l {
+            .t {
                 color: #F33;
             }
-            #g {
+            .logo {
                 filter: invert(1);
             }
         }
     </style>
 </head>
 <body>
+    <img src="path/to/tux-logo.png" alt="Tux Logo" class="logo">
+    <pre>
 <span><a href="/" class="t">
 
    .-.    
@@ -75,4 +75,3 @@
 </pre>
 </body>
 </html>
-
