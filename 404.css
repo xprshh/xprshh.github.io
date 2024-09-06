@@ -2,6 +2,9 @@
 body {
     overflow-y: scroll;
     font: 16px monospace, monospace;
+    margin: 0; /* Ensure no default margin */
+    padding: 0; /* Ensure no default padding */
+    position: relative; /* Ensure positioning context for absolute positioning */
 }
 
 pre {
@@ -11,6 +14,15 @@ pre {
 
 .t {
     text-decoration: none;
+}
+
+/* Logo styling */
+#logo {
+    position: absolute; /* Absolute positioning to place it precisely */
+    top: 10px; /* Adjust as needed */
+    left: 10px; /* Adjust as needed */
+    width: auto; /* Maintain aspect ratio */
+    height: 50px; /* Adjust as needed */
 }
 
 /* Responsive styling */
@@ -48,4 +60,3 @@ img, #b {
 span {
     display: inline-block;
 }
-
