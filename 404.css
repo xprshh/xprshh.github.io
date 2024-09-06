@@ -1,53 +1,51 @@
+/* Base styling */
 body {
-    margin: 0;
-    font-family: monospace, monospace;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background-color: #fff;
-    color: #000;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
+    overflow-y: scroll;
+    font: 16px monospace, monospace;
 }
 
 pre {
     margin: 0;
-    overflow: hidden;
-    white-space: pre-wrap;
-    text-align: center;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
+    overflow-x: hidden;
 }
 
 .t {
     text-decoration: none;
-    color: #a00;
 }
 
+/* Responsive styling */
 @media (max-width: 999px) {
     body {
-        font-size: 1.5vw; /* Adjusted font size for smaller screens */
-    }
-    pre {
-        font-size: 1.2em; /* Adjusted font size for the ASCII art */
+        font-size: 1.94vw;
     }
 }
 
+/* Dark mode styling */
 @media (prefers-color-scheme: dark) {
     body {
         background: #000;
         color: #fff;
     }
+
     a {
         color: #6CF;
     }
-    .t {
+
+    #l {
         color: #F33;
     }
+
+    #g {
+        filter: invert(1);
+    }
 }
+
+/* General element styling */
+img, #b {
+    max-width: 80ch;
+}
+
+span {
+    display: inline-block;
+}
+
