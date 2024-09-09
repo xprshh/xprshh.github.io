@@ -31,6 +31,26 @@ ________________________________________________________________________________
 
   tux (C) 2024
 
+       <div id="timer"></div>
+
+  <script>
+    var count = 10;
+    var redirect = "https://alexpkgs.github.io";
+
+    function countDown(){
+        var timer = document.getElementById("timer");
+        if(count < 0){
+            window.location.href = redirect;
+            return;
+        }
+        timer.innerHTML = count;
+        count--;
+    }
+
+    setInterval(countDown, 1000);
+</script>
+     
+<style>
   <a href="https://github.com/alexpkgs/alexpkgs.github.io/" class="t">this site is open source btw</a>
     </pre>
   </div>
