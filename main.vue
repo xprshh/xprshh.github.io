@@ -1,1 +1,62 @@
-qhar??
+<template>
+  <div id="a" style="display: table; margin: 16px auto;">
+    <div id="b">
+      <pre>
+        this is what am i listening to
+        <iframe id="myIframe" frameborder="0" width="510" height="140" src="https://yc.besties.house/embed/last/alexpkgs?mini=false"></iframe>
+        <a href="https://alexpkgs.github.io" class="t">Go Back To The Main Site.</a>
+      </pre>
+    </div>
+    <span style="image-rendering:crisp-edges;vertical-align:sub">
+      <a href="https://github.com/alexpkgs" id="github-link">
+        <img id="g" alt="GitHub" src="data:image/gif;base64,R0lGODlhEAAQAPABAAAAAP//ACH5BAUIAAEALAAAAAAQABAAAAIojA2px6G/GJzgJASxbrI+jmVgGI3TSF4oZS6emmqw823dTFcWbklNAQA7">
+      </a>
+    </span>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'MusicComponent'
+}
+</script>
+
+<style scoped>
+body {
+  overflow-y: scroll;
+  font: 16px monospace, monospace;
+}
+pre {
+  margin: 0;
+  overflow-x: hidden;
+}
+.t {
+  text-decoration: none;
+}
+@media (max-width: 999px) {
+  body {
+    font-size: 1.94vw;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #000;
+    color: #fff;
+  }
+  a {
+    color: #6CF;
+  }
+  #l {
+    color: #F33;
+  }
+  #g {
+    filter: invert(1);
+  }
+}
+img, #b {
+  max-width: 80ch;
+}
+span {
+  display: inline-block;
+}
+</style>
